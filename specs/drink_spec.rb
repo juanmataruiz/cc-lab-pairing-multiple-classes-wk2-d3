@@ -6,16 +6,16 @@ class DrinkTest < MiniTest::Test
 
  def setup
    @drink1 = Drink.new("Beer", 3)
-   @drink2 = Drink.new("Wine", 5)
+
  end
 
   def test_drink_name
     assert_equal("Beer", @drink1.name)
   end
 
-def test_drink_price
-  assert_equal(5, @drink2.price)
-end
+  def test_drink_price
+    assert_equal(3, @drink1.price)
+  end
 
 
 end
