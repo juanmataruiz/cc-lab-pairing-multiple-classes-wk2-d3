@@ -13,7 +13,9 @@ class DrinkTest < MiniTest::Test
     assert_equal("Beer", @drink1.name)
   end
 
-
+def test_drink_price
+  assert_equal(5, @drink2.price)
+end
 
 
 end
